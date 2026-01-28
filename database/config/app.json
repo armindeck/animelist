@@ -1,0 +1,14 @@
+{
+    "app_name": "AnimeList",
+    "app_url": "http://localhost/animelist",
+    "app_lang": "es",
+    "app_theme": "default",
+    "app_ssl": "",
+    "app_debug": true,
+    "database": {
+        "host": "localhost",
+        "user": "admin",
+        "pass": "",
+        "port": ""
+    }
+}

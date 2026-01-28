@@ -1,0 +1,14 @@
+{
+    "header": [
+        [
+            {"label": "app.name", "url": "app.url", "icon": "fas fa-meteor"},
+            {"label": "Home", "url": "", "icon": "fas fa-home"},
+            {"label": "Anime", "url": "anime", "icon": "fas fa-hamburger"},
+            {"label": "List", "url": "list", "icon": "fas fa-list"}
+        ],
+        [
+            {"label": "Register", "url": "register", "icon": "fas fa-user-plus"},
+            {"label": "Login", "url": "login", "icon": "fas fa-user"}
+        ]
+    ]
+}

@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# ========================
+# Seguridad básica
+# ========================
+
+# Evitar listado de directorios (si el server lo permite)
+Options -Indexes
+
+# Bloquear carpetas internas
+RewriteRule ^(core|database)/ - [F,L]
+
+# ========================
+# Quitar index.php de la URL
+# ========================
+RewriteCond %{THE_REQUEST} \s(/.+?/)?index\.php([^\s]*) [NC]
+RewriteRule ^index\.php/?(.*)$ %1$2 [R=301,L]
+
+# ========================
+# Archivos y carpetas reales (assets OK)
+# ========================
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ========================
+# Front controller
+# ========================
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

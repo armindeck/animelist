@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+  scroll-padding-bottom: 50px;
+}
+
+body {
+    color: #111;
+    background-color: #FCFCFC;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+    z-index: 999;
+}
+
+.header__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    max-width: 1100px;
+    padding: 12px 16px;
+}
+
+.header__nav {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header__item {
+    display: block;
+}
+
+.header__item a {
+    padding: 8px 12px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(73, 70, 110);
+    text-decoration: none;
+}
+
+.header__item a:hover {
+    background-color: rgb(59, 57, 88);
+}
+
+.header__item a.logo {
+    background-color: rgb(87, 84, 133);
+}
+
+.header__item a .icon {
+    margin-right: 6px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 20px 12px;
+    color: #111;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.footer a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.hero a {
+    color: #111;
+    text-decoration: none;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+    color: #111;
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.hero__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.hero__image img {
+    width: 100%;
+    opacity: .9;
+    transition: .3s ease-in-out;
+}
+
+.hero__image:hover img {
+    opacity: 1;
+    transform: rotate(1deg) scale(1.03);
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.hero__info hr {
+    margin: 8px 12px;
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+}
+
+.hero__info footer {
+    display: flex;
+}
+
+.hero__nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hero__nav a {
+    display: block;
+    padding: 6px 8px;
+    color: white;
+    font-size: small;
+    background-color: rgb(73, 70, 110);
+    text-decoration: none;
+}
+
+.hero__nav a:hover {
+    background-color: rgb(59, 57, 88);
+}
+
+.anime__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 12px;
+}
+
+.anime__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 12px;
+    max-width: 1000px;
+}
+
+.anime__container a {
+    text-decoration: none;
+}
+
+.anime__card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.anime__card header {
+    padding: 8px;
+}
+
+.anime__card .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.anime__card img {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.anime__card:hover img {
+    transform: rotate(1deg) scale(1.04);
+}
+
+.anime__card footer {
+    border-top: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: small;
+    text-align: center;
+    color: #111;
+}
+
+.anime__card-info {
+    overflow: hidden;
+    height: 0;
+}
+
+.anime__card:hover .anime__card-info {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+    transition: .2s ease;
+    background-color: rgba(255, 255, 255, .8);      
+    backdrop-filter: blur(1px);
+}
