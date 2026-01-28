@@ -1,6 +1,6 @@
 <div class="anime__list">
     <div class="anime__container">
-        <a href="anime/naruto">
+        <a href="anime/naruto-shippuden">
             <div class="anime__card">
                 <header>
                     <div class="image">

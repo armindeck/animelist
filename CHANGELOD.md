@@ -1,3 +1,8 @@
+# Historial de cambios
+
+## 2026-01-27
+
+- Agregue la pagina de información de anime (desarrollo).
 
 ## 2026-01-26
 

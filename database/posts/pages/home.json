@@ -1,4 +1,5 @@
 {
     "title": "Listado de Animes",
-    "content": "Lista tus animes favoritos"
+    "content": "Lista tus animes favoritos",
+    "slug": "home"
 }
