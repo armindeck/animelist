@@ -18,7 +18,7 @@ html {
 body {
     color: #111;
     background: #FFF;
-background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
 }
 
 .app {
@@ -353,15 +353,29 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252
 
 .anime__info-header {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
+    justify-content: start;
 }
 
 .anime__info-image-back {
     display: flex;
     align-items: center;
-    height: 350px;
+    max-height: 300px;
     overflow: hidden;
+    position: relative;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.anime__info-image-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 8px 12px;
+    border-radius: 6px 0px 0px 0px;
+    backdrop-filter: blur(2px);
 }
 
 .anime__info-image-poster {
@@ -377,6 +391,7 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252
     transform: translateY(-50%) translateX(25px);
     padding: 4px;
     background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
 }
 
 .anime__info-image-poster img {
@@ -386,6 +401,118 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252
 .anime__info img {
     width: 100%;
     max-width: 100%;
+}
+
+.anime__info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+    flex: 1;
+    padding: 0 14px;
+}
+
+.anime__info-grid-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: translateY(-200px);
+}
+
+.anime__info-grid-left-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
+}
+
+.anime__info-grid-left-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.anime__info-grid-left-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 250px;
+}
+
+.anime__info-grid-left-content hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.anime__info-grid-left-content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: rgb(73, 70, 110);
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.anime__info-grid-left-content a.state {
+    display: block;
+}
+
+.anime__info-grid-left-content a.state.finalized {
+    background-color: rgb(161, 10, 10);
+}
+
+.anime__info-grid-left-content a.follow {
+    background-color: rgb(15, 161, 10);
+}
+
+.anime__info-grid-left-content a.waiting_list {
+    background-color: rgb(201, 125, 12);
+}
+
+.anime__info-grid-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.anime__info-grid-right header,
+.anime__info-grid-right footer {
+    flex: 1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .1);
+}
+
+.anime__info-grid-genre-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.anime__anime__info-grid-genre-links a {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: rgb(73, 70, 110);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: small;
+}
+
+.anime__info-footer {
 }
 
 @media (max-width: 980px) {
@@ -418,5 +545,25 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252
 
     .header__nav .header__list {
         flex-direction: column;
+    }
+   
+    .anime__info-header {
+        justify-content: center;
+    }
+
+    .anime__info-image-back {
+        border-radius: 0;
+    }
+    .anime__info-image-title {
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    .anime__info-image-poster {
+        transform: translateY(-50%) translateX(0);
     }
 }

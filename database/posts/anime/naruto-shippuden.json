@@ -2,6 +2,26 @@
     "title": "Naruto Shippuden",
     "content": "Informatión",
     "slug": "anime/naruto-shippuden",
+    "sinopsis": "Naruto Shippuden sigue la historia de Naruto Uzumaki, un joven ninja que busca proteger a su aldea y convertirse en el Hokage, el líder más fuerte. Después de entrenar durante dos años y medio con Jiraiya, Naruto regresa a la Aldea Oculta de la Hoja para enfrentar nuevas amenazas y desafíos. A lo largo de la serie, Naruto y sus amigos luchan contra poderosos enemigos, descubren secretos ocultos y fortalecen sus lazos de amistad mientras buscan la paz en un mundo lleno de conflictos.",
+    "generos": [
+        "Acción",
+        "Aventura",
+        "Comedia",
+        "Drama",
+        "Fantasia",
+        "Shounen"
+    ],
+    "episodes": 500,
+    "episodes_info": [
+        {"title": "El regreso a casa", "upload_date": "2007-02-15", "number": 1},
+        {"title": "El Akatsuki comienza a moverse", "upload_date": "2007-02-15", "number": 2},
+        {"title": "Los resultados del entrenamiento", "upload_date": "2007-02-22", "number": 3},
+        {"title": "El Jinchuriki de Arena", "upload_date": "2007-03-01", "number": 4}
+    ],
+    "status": "Finalizado",
+    "release_year": 2007,
+    "duration": "23 min por episodio",
+    "studio": "Studio Pierrot",
     "background_image_url": "http://localhost/animelist/assets/img/hero.jpg",
     "poster_image_url": "http://localhost/animelist/assets/img/naruto-shippuden-latino.jpg"
 }
